@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Juntas</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+       <div class="top" id="top"> 
+            <a href="index.html">
+                <img src="imagens/logo.png" alt="logo" class="logo" id="logo">
+            </a>
+            <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+            <menu id="itens">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="institucional.html">Institucional</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </menu>
+        </div>
+    </header>
+    <main>
+        <section class="normal">
+            <h2>Bem vindo à Global Juntas!</h2>
+                <p class="center" id="center">Líder em fabricação e comercio de juntas e peças automotivas. <br>
+                    <br>
+                    <img src="imagens/HB20Global-removebg-preview-removebg-preview.png" class="adap" id="adap">
+                </p>
+                <p>Confira a nossa mais recente linha de juntas para cabeçote <span class="hover-image">GLOBAL+</span>. Desenvolvida com alto padrão de qualidade e seguindo os padrões de fábrica, os modelos <span class="hover-image">GLOBAL+</span> são feitos originalmente sob medida para o seu motor. Fabricação adaptada para longevidade da vida útil de seu motor possibilitando a utilização prolongada de cabeçotes retificados (rebaixados) devido sua maior espessura que compensa a retifica gerada em seu bloco modificado. Não deixe de conferir a nossa <a href="produtos.html"><b>linha completa</b></a>.</p>
+                <br>
+                <div id="image-container">
+                    <img id="hover-image" src="imagens/juntasglobal+.jpg" alt="Imagem Global+">
+                </div>
+                <div class="card" id="card">
+                    <a href="contato.html">
+                        <img src="imagens/contato.png" class="icard" id="icard">
+                        <p class="card" id="card"><b>Contate-nos</b></p>
+                    </a>
+                </div>
+                <p class="inform" id="inform">Faça um orçamento ou tire suas dúvidas.</p>
+                <p class="center" id="center"><br>
+                <div class="card" id="card">
+                    <a href="https://www.instagram.com/global_juntas/?hl=pt-br" target="blank">
+                        <img src="imagens/instacard.png" class="icard" id="icard">
+                        <p class="card" id="card"><b>Redes Sociais</b></p>
+                    </a>
+                </div>
+                <p class="inform" id="inform">Siga a Global Juntas nas redes sociais.</p>
+                <p class="center" id="center"><br>
+            <section class="imagem" id="img01">
+            </section>
+            <h2>O que são juntas automotivas e para que servem?</h2>
+                <p>As juntas automotivas são componentes essenciais em motores de veículos e têm a função de garantir a vedação entre as peças, especialmente nas partes onde ocorre a passagem de fluidos ou gases. Elas são projetadas para suportar altas temperaturas e pressões, além de resistir à corrosão e aos produtos químicos presentes no motor.</p>
+                <img src="imagens/juntas.png" class="adap" id="adap">
+                <ul type="circle"><b>As principais funções das juntas automotivas incluem:</b>
+                    <li class="texto"><b>Vedação:</b> As juntas são responsáveis por garantir que não ocorra vazamento de fluidos ou gases em áreas críticas do motor, como cabeçotes, cárter, coletor de admissão e escape, entre outras. Elas impedem a mistura de óleo, água, gases de escape e outros líquidos ou gases, mantendo o funcionamento correto do motor.</li>
+                    <li class="texto"><b>Absorção de vibrações:</b> As juntas ajudam a absorver as vibrações e choques gerados pelo funcionamento do motor, evitando o desgaste prematuro das peças e reduzindo o ruído e as vibrações transmitidas para o resto do veículo.</li>
+                    <li class="texto"><b>Isolamento térmico:</b> As juntas também podem atuar como isolantes térmicos, ajudando a manter a temperatura adequada em diferentes partes do motor. Isso é especialmente importante em áreas onde o calor é gerado em excesso, como no cabeçote do motor.</li>
+                    <li class="texto"><b>Compatibilidade química:</b> As juntas automotivas são projetadas para serem compatíveis com os líquidos e gases presentes no motor, evitando a degradação prematura e garantindo a durabilidade do sistema de vedação.</li>
+                </ul>            
+                <br>
+            <section class="normal">
+                    <img src="imagens/retentor1.png"> <img src="imagens/vedador1.png">
+                <p class="center" id="center">Fabricação de retentores e vedadores de haste da válvula. <br>
+                </p>
+        </section>
+        <a href="https://www.instagram.com/global_juntas/?hl=pt-br">           
+            <p class="redes" id="redes"><img src="imagens/instagram.png" alt="logo" class="insta" id="insta"> @global_juntas</p>
+        </a>
+        <a href="mailto:contato@globaljuntas.com.br">           
+            <p class="redes" id="redes"><img src="imagens/e-mail.png" alt="logo" class="insta" id="insta"> contato@globaljuntas.com.br</p>
+        </a>
+    </main>
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+
+        var hoverImage = document.querySelector('.hover-image');
+        var imageContainer = document.getElementById('image-container');
+
+        hoverImage.addEventListener('mouseover', function() {
+            imageContainer.style.display = 'block';
+        });
+
+        hoverImage.addEventListener('mouseout', function() {
+            imageContainer.style.display = 'none';
+        });
+    </script>
+    <footer class="rodape">
+        <div>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="institucional.html">Institucional</a></li>
+                <li><a href="contato.html">Contato</a></li>               
+            </ul>
+        </div>
+        <div>
+            <p> &copy;  Todos os direitos reservados. Global Juntas Comércio de Juntas Automotivas LTDA.</p>
+        </div>
+    </footer>
+    </header>
+    <footer class="dev" id="dev">
+        <p>Desenvolvido por <a href="https://www.linkedin.com/in/guilherme-cavalaro-marques-40b376160/" target="_blank">Guilherme Cavalaro Marques</a></p>
+    </footer>
+</body>
+</html>

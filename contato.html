@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Juntas</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <div class="top" id="top"> 
+             <a href="index.html">
+                 <img src="imagens/logo.png" alt="logo" class="logo" id="logo">
+             </a>
+             <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+             <menu id="itens">
+                 <ul>
+                     <li><a href="index.html">Início</a></li>
+                     <li><a href="produtos.html">Produtos</a></li>
+                     <li><a href="institucional.html">Institucional</a></li>
+                     <li><a href="contato.html">Contato</a></li>
+                 </ul>
+             </menu>
+         </div>
+     </header>
+    <main>
+        <h1>Contatos</h1>
+        <section class="normal">
+
+            <div class="contato">
+                <img src="imagens/telefone.png" alt="telefone" class="icon" id="icon">
+                <p><strong>Telefone / Whatsapp</strong></p>
+                <p class="simples">(11) 5073-4376</p>
+                <p class="simples">
+                    <a href="whatsapp://send?phone=5511973635020">(11) 97363-5020</a>
+                </p>
+            </div>
+            <br>
+            <div class="contato">
+                <img src="imagens/email.png" alt="email" class="icon" id="icon">
+                <p><strong>E-mail</strong></p>
+                <a href="mailto:contato@globaljuntas.com.br">
+                    <p class="simples">contato@globaljuntas.com.br</p>
+                </a>
+            </div>
+            <br>
+            <div class="contato">
+                <img src="imagens/relogio.png" alt="horario" class="icon" id="icon">
+                <p><strong>Horário de funcionamento</strong></p>
+                    <p class="simples">De segunda à sexta das 8:00 ás 18:00</p>
+                </a>
+            </div>
+            <br>
+            <div class="contato">
+                <img src="imagens/endereco.png" alt="endereco" class="icon" id="icon">
+                <p><strong>Endereço</strong></p>
+                    <p class="simples">Rua Alexandre Aliperti, 199 - Agua Funda - São Paulo / SP</p>
+                    <p class="simples">CEP: 04312-000</p>
+                </a>
+            </div>
+        </section>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2584.6042465555256!2d-46.62370813654807!3d-23.633638748752112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1688151686079!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </main>
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+    <footer class="rodape">
+        <div>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="institucional.html">Institucional</a></li>
+                <li><a href="contato.html">Contato</a></li>               
+            </ul>
+        </div>
+        <div>
+            <p> &copy;  Todos os direitos reservados. Global Juntas Comércio de Juntas Automotivas LTDA.</p>
+        </div>
+    </footer>
+    </header>
+    <footer class="dev" id="dev">
+        <p>Desenvolvido por <a href="https://www.linkedin.com/in/guilherme-cavalaro-marques-40b376160/" target="_blank">Guilherme Cavalaro Marques</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Juntas</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <div class="top" id="top"> 
+             <a href="index.html">
+                 <img src="imagens/logo.png" alt="logo" class="logo" id="logo">
+             </a>
+             <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+             <menu id="itens">
+                 <ul>
+                     <li><a href="index.html">Início</a></li>
+                     <li><a href="produtos.html">Produtos</a></li>
+                     <li><a href="institucional.html">Institucional</a></li>
+                     <li><a href="contato.html">Contato</a></li>
+                 </ul>
+             </menu>
+         </div>
+     </header>
+    <main>
+        <section class="normal">
+            <h2>"Investimos em tecnologia para melhor atendê-lo"</h2>
+                <p>Fundada em 2003, a Global Juntas se estabeleceu no mercado automotivo como referência em qualidade e tecnologia. Alinhada com as melhores práticas do mercado automobilistico, tanto em segurança quanto em sustentabilidade trabalhamos com as prensas hidráulicas importadas mais recentes e atuais em termos de tecnologia, e por meio delas fabricamos juntas automotivas de centenas de fabricantes para todo o mercado de reposição de automóveis.</p>
+                <p>Composta por profissionais altamente qualificados que trabalham em harmonia a Global Juntas entrega produtos de altíssima qualidade, se consolidando como empresa líder no comercio de juntas e acessórios automotivos. <i>"Para sermos referência no setor automotivo, investimos em tecnologia e prezamos pela qualidade de nossos produtos, bem como a motivação e a alegria de nossos colaboradores"</i> FLORES, Thiago (CEO e co-fundador da Global Juntas).</p>
+                <p class="center" id="center">Empresa líder em fabricação e comercio de juntas e peças automotivas. <br>
+                    <br>
+                    <img src="imagens/HB20Global.png" class="adap" id="adap">
+                </p>
+        </section>
+        <section class="normal">
+            <h2>Copa Shell HB20</h2>
+                <p class="center" id="center">Patrocinador oficial da equipe XXXXXX na Copa Shell HB20 desde 2020.</p>
+                <section class="imagem" id="img02">
+                </section>
+                <p class="legenda" id="leg">HB20 com peças Global Juntas pilotado por Luiz Sena Jr. em 2023.</p>
+                <p>A Global Juntas participa como patrocinador ativo da equipe XXXXXX na Copa Shell HB20, onde no seu ano de estreia (2020) alcançamos o segundo lugar geral da copa e a vitória na ultima corrida do campeonato.</p>
+                <p>Com atuações incríveis nos últimos anos o atleta, engenheiro mecânico e multicampeão <a href="https://www.instagram.com/luizsenajr/?hl=pt-br" target="_blank"><b>Luiz Sena Jr.</b></a> conseguiu levar o nome da Global Juntas ao pódio da Copa HB20 2023. Sendo este um marco histórico de nossa parceria automobilistica.</p>
+                <section class="imagem" id="img04">
+                </section>
+                <p class="legenda" id="leg">HB20 com peças Global Juntas pilotado por Luiz Sena Jr. em 2023.</p>
+        </section>
+
+        <section class="normal">
+            <h2>Futebol Amador e Corrida</h2>
+                <p  class="center" id="center">Patrocinador master da equipe de Futebol Amador e de Corrida Fúria 7 Futebol Clube.</p>
+                <section class="imagem" id="img03">
+                </section>
+                <p class="legenda" id="leg">Atleta Alan da equipe F7 Running em uma meia maratona de 21k.</p>
+                <p>Desde 2009 com atuações vitoriosas em festivais e amistosos no futsal, society e futebol de campo. A Global Juntas se orgulha de ter feito parte dessa história de sucesso, onde foram revelados diversos craques dentro das quadras e do campo. Com centenas de partidas disputadas a equipe F7 se consolidou no futebol amador da zona sul de São Paulo e também em Indaiatuba, trazendo com ela a logomarca Global Juntas, firmando uma parceria grandemente vitoriosa.</p>
+                <img src="imagens/F7jr.jpg" alt="F7 Futsal Jr" class="adap" id="adap">
+                <p class="legenda" id="legc">Atletas Thiago Ribeiro e Raphael do sub-09.</p>
+                <img src="imagens/F7perfilado.jpg" alt="F7 Futsal" class="adap" id="adap2">
+                <p class="legenda" id="legc">Equipe F7 de futsal.</p>
+        </section>
+    </main>
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+    <footer class="rodape">
+        <div>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="institucional.html">Institucional</a></li>
+                <li><a href="contato.html">Contato</a></li>               
+            </ul>
+        </div>
+        <div>
+            <p> &copy;  Todos os direitos reservados. Global Juntas Comércio de Juntas Automotivas LTDA.</p>
+        </div>
+    </footer>
+    </header>
+    <footer class="dev" id="dev">
+        <p>Desenvolvido por <a href="https://www.linkedin.com/in/guilherme-cavalaro-marques-40b376160/" target="_blank">Guilherme Cavalaro Marques</a></p>
+    </footer>
+</body>
+</html>

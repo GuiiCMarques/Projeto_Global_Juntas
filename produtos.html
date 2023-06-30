@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Juntas</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+       <div class="top" id="top"> 
+            <a href="index.html">
+                <img src="imagens/logo.png" alt="logo" class="logo" id="logo">
+            </a>
+            <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+            <menu id="itens">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="institucional.html">Institucional</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </menu>
+        </div>
+    </header>
+    <main>
+
+    </main>
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+
+        var hoverImage = document.querySelector('.hover-image');
+        var imageContainer = document.getElementById('image-container');
+
+        hoverImage.addEventListener('mouseover', function() {
+            imageContainer.style.display = 'block';
+        });
+
+        hoverImage.addEventListener('mouseout', function() {
+            imageContainer.style.display = 'none';
+        });
+    </script>
+    <footer class="rodape">
+        <div>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="institucional.html">Institucional</a></li>
+                <li><a href="contato.html">Contato</a></li>               
+            </ul>
+        </div>
+        <div>
+            <p> &copy;  Todos os direitos reservados. Global Juntas Comércio de Juntas Automotivas LTDA.</p>
+        </div>
+    </footer>
+    </header>
+    <footer class="dev" id="dev">
+        <p>Desenvolvido por <a href="https://www.linkedin.com/in/guilherme-cavalaro-marques-40b376160/" target="_blank">Guilherme Cavalaro Marques</a></p>
+    </footer>
+</body>
+</html>
