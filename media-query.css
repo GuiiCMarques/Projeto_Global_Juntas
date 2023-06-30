@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+
+    header {
+        display: flex;
+        align-items: center;
+        background-image: linear-gradient(to bottom, rgb(127, 157, 240), rgb(178, 197, 238), white);
+    }
+
+    div.top {
+        background-color: rgba(255, 255, 255, 0);
+        position: relative;
+    }
+
+    i#burguer {
+        display: none;
+    }
+
+    menu {
+        display: block;
+    }
+
+    menu > ul > li {
+        display: inline-block;
+    }
+
+    main {
+        width: auto;
+    }
+
+    div > a > p#card {
+        font-size: 22px;
+        text-align: center;
+        padding-top: 0px;
+        padding-bottom: 12px;
+        color: rgba(0, 0, 0, 0.808);
+    }
+
+    section#img01 {
+        background-position: center center;
+        background-size: cover;
+    }
+
+}
