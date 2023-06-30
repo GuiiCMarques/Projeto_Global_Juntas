@@ -102,7 +102,7 @@ main {
     max-width: 900px;
     background-color: white;
     margin: auto;
-    padding: 10px;
+    padding-right: 24px;
     border-radius: 10px;
     text-align: center;
 }
@@ -164,13 +164,13 @@ p#inform {
 
 img#icard {
     width: 80%;
-    padding-left: 10px;
 }
 
 div > a > p#card {
-    font-size: 22px;
+    font-size: 18px;
     text-align: center;
     padding-top: 0px;
+    padding-bottom: 12px;
     color: rgba(0, 0, 0, 0.808);
 }
 
@@ -314,35 +314,6 @@ p.simples {
 div.contato:hover {
     background-image: radial-gradient(circle, rgb(166, 182, 226), rgb(190, 194, 204), white);
     box-shadow: 2px 2px 2px 2px rgba(6, 13, 19, 0.623);
-}
-
-/* Estilo para o menu lateral */
-#sidebar {
-width: 200px;
-background-color: #f0f0f0;
-}
-
-/* Estilo para as marcas */
-.marca {
-cursor: pointer;
-}
-
-/* Estilo para os modelos */
-.modelo {
-cursor: pointer;
-margin-left: 10px;
-}
-
-/* Estilo para as peças */
-.peca {
-cursor: pointer;
-margin-left: 20px;
-}
-
-/* Oculta os submenus por padrão */
-.modelo-list,
-.peca-list {
-display: none;
 }
 
 footer.rodape {
